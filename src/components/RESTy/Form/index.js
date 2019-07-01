@@ -25,13 +25,19 @@ export default function Form() {
         response = await superagent.get(state.URL);
         break;
       case 'post':
-        response = await superagent.post(state.URL).send();
+        response = await superagent
+          .post(state.URL)
+          .send(JSON.parse(state.requestBody.replace(/\s+/g, '')));
         break;
       case 'put':
-        response = await superagent.put(state.URL).send();
+        response = await superagent
+          .put(state.URL)
+          .send(JSON.parse(state.requestBody.replace(/\s+/g, '')));
         break;
       case 'patch':
-        response = await superagent.patch(state.URL).send();
+        response = await superagent
+          .patch(state.URL)
+          .send(JSON.parse(state.requestBody.replace(/\s+/g, '')));
         break;
       case 'delete':
         response = await superagent.delete(state.URL);
@@ -166,6 +172,8 @@ export default function Form() {
           />
           <div
             css={css`
+              display: flex;
+              flex-flow: column nowrap;
               flex: 1 1;
             `}
           >
