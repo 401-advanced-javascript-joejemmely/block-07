@@ -28,12 +28,6 @@ class RESTyContextProvider {
   # method:string
   # requestBody:string
   # response:object
-  ==methods==
-  +handleUrl()
-  +handleMethod()
-  +handleBody()
-  +handleSubmit()
-  +populate()
 }
 
 
