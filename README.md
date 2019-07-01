@@ -10,10 +10,6 @@
 - [travis](https://travis-ci.com/401-advanced-javascript-joejemmely/block-07)
 - [front-end](https://submission.d397hhiv1k67mv.amplifyapp.com/)
 
-#### Documentation
-
-- [styleguide](https://github.com/401-advanced-javascript-joejemmely/block-05/tree/submission/styleguide)
-
 #### Running the app
 
 - `npm start`
@@ -21,9 +17,6 @@
 #### Tests
 
 - How do you run tests? `npm test`
-- What assertions were made?
-  - all components render
-  - state change
 
 #### UML
 
